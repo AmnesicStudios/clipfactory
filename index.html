@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipFactory</title>
+<meta name="description" content="ClipFactory turns long videos into short vertical clips and publishes them to its owner's YouTube channels.">
+<style>
+  :root { --bg: #ffffff; --text: #1b1d21; --muted: #5d6470; --accent: #e5484d; --card: #f4f5f7; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111317; --text: #eceef2; --muted: #9aa1ad; --card: #1b1e24; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 2.4rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); }
+  .tag { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
+  ol { padding-left: 1.2em; }
+  .card { background: var(--card); border-radius: 12px; padding: 16px 20px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Clip<span>Factory</span></h1>
+  <p class="tag">Long videos in, short vertical clips out.</p>
+
+  <p>ClipFactory is a private tool used by its owner to run short-form clip channels in English and French. It is not a public service: only the owner signs in, and it only publishes to the owner's own YouTube channels.</p>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>Takes the link of a video whose creator allows clipping.</li>
+    <li>Transcribes it and picks the strongest moments.</li>
+    <li>Cuts them into vertical 9:16 clips with captions and credit to the original creator.</li>
+    <li>After the owner approves each clip, uploads it to the owner's YouTube channel.</li>
+  </ol>
+
+  <h2>Google and YouTube data</h2>
+  <div class="card">
+    <p>ClipFactory uses the YouTube API Services to upload videos to channels its owner has authorized, and to read basic channel information (such as the channel name) to confirm which channel is connected. It does not access Gmail, contacts, Drive or any other Google data. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · Contact: <a href="https://github.com/AmnesicStudios/clipfactory/issues">github.com/AmnesicStudios</a></p>
+  </footer>
+</main>
+</body>
+</html>
